@@ -13,4 +13,8 @@ func MapUrls() {
 	//router.GET("/users/search", controllers.SearchUser)
 
 	router.POST("/users", users.CreateUser)
+
+	router.PUT("/users/:user_id", users.UpdateUser)
+
+	router.PATCH("/users/:user_id", users.UpdateUser)
 }
