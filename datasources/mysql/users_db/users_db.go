@@ -8,18 +8,18 @@ import (
 )
 
 const (
-	MYSQL_USERS_USERNAME = "mysql_users_username"
-	MYSQL_USERS_PASSWORD = "mysql_users_password"
-	MYSQL_USERS_HOST     = "mysql_users_host"
-	MYSQL_USERS_SCHEMA   = "mysql_users_schema"
+	MysqlUsersUsername = "mysql_users_username"
+	MysqlUsersPassword = "mysql_users_password"
+	MysqlUsersHost     = "mysql_users_host"
+	MysqlUsersSchema   = "mysql_users_schema"
 )
 
 var (
 	Client   *sql.DB
-	username = os.Getenv(MYSQL_USERS_USERNAME)
-	password = os.Getenv(MYSQL_USERS_PASSWORD)
-	host     = os.Getenv(MYSQL_USERS_HOST)
-	schema   = os.Getenv(MYSQL_USERS_SCHEMA)
+	username = os.Getenv(MysqlUsersUsername)
+	password = os.Getenv(MysqlUsersPassword)
+	host     = os.Getenv(MysqlUsersHost)
+	schema   = os.Getenv(MysqlUsersSchema)
 )
 
 func init() {
